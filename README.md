@@ -9,6 +9,10 @@ Projeto educacional com **playbooks objetivos** para investigar alertas de EDR, 
 
 ---
 
+## 🔗 Acesso rápido
+
+[**🛡️ Tratar um incidente — pesquisa de IoCs**](https://geovanniandrade.github.io/gg-edr-incident-investigation/#tratar-incidente) · [**📦 Artefatos recuperados do EDR — interface web**](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/EDR-Retrieved-Artifacts/)
+
 ## 🎯 Como utilizar
 
 **Triage → Preserve → Investigate → Enrich → Contain → Verdict → Report**
