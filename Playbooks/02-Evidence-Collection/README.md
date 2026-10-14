@@ -11,6 +11,9 @@ Exporte alerta, árvore de processos, logs de eventos, conexões e propriedades 
 ## 🧰 Ferramentas e comandos — se aplicável
 Consulte os exemplos de [PowerShell](../../Tools-and-Commands/PowerShell/README.md) ou [Linux](../../Tools-and-Commands/Linux/README.md) somente em sistemas autorizados. Registre comando, contexto e saída relevante.
 
+## 📦 Guia complementar
+[Análise de artefatos recuperados do EDR](../EDR-Retrieved-Artifacts/README.md) — Retrieve File, preservação, ZIP e triagem inicial de PDFs.
+
 ## ⚠️ Atenção
 Evite exclusões, restaurações ou uploads públicos antes de avaliar preservação e confidencialidade.
 
