@@ -1,55 +1,72 @@
 # 🛡️ GG // EDR Incident Investigation
 
-**Practical Blue Team Investigation & Incident Response**
+**Blue Team • EDR • DFIR • Incident Response**
 
-Guia aberto de triagem, investigação, contenção e documentação de alertas de EDR — com exemplos práticos e metodologia independente de fabricante.
+Projeto educacional com **playbooks objetivos** para investigar alertas de EDR, interpretar evidências, consultar indicadores e documentar decisões técnicas. A metodologia é independente de fabricante.
 
-> **Projeto educacional:** cases, indicadores, equipamentos e evidências são fictícios. Não há dados corporativos reais.
-
-## 🎯 Objetivo
-Ensinar analistas a responder: **o que aconteceu, quais evidências sustentam a conclusão e o que ainda precisa ser validado?**
-
-**Triage → Preserve → Investigate → Enrich → Contain/Remediate → Verdict → Report**
-
-> A contenção emergencial pode ocorrer a qualquer momento, mediante autorização e registro do impacto. Não espere a etapa 05 diante de ameaça ativa.
-
-## 🔎 Playbooks — investigação em 7 etapas
-
-| Etapa | Guia | Resultado |
-|---|---|---|
-| 01 | [Alert Triage](Playbooks/01-Alert-Triage/README.md) | Prioridade e hipótese inicial |
-| 02 | [Evidence Collection](Playbooks/02-Evidence-Collection/README.md) | Evidências íntegras e catalogadas |
-| 03 | [Process Investigation](Playbooks/03-Process-Investigation/README.md) | Árvore de processos e linha do tempo |
-| 04 | [Threat Intelligence](Playbooks/04-Threat-Intelligence/README.md) | IoCs enriquecidos e contextualizados |
-| 05 | [Containment & Remediation](Playbooks/05-Containment-Remediation/README.md) | Ações documentadas e eficácia validada |
-| 06 | [Analyst Verdict](Playbooks/06-Analyst-Verdict/README.md) | Veredito fundamentado |
-| 07 | [Incident Reporting](Playbooks/07-Incident-Reporting/README.md) | Relatório rastreável |
-
-## 📚 Explore o projeto
-
-| Seção | O que você encontra |
-|---|---|
-| [📘 Knowledge Base](Knowledge-Base/EDR-Fundamentals.md) | Conceitos de EDR, detecções, MITRE ATT&CK e Threat Intelligence |
-| [🧰 PowerShell](Tools-and-Commands/PowerShell/README.md) | Comandos de consulta no Windows |
-| [🐧 Linux](Tools-and-Commands/Linux/README.md) | Comandos de consulta em endpoints Linux |
-| [📑 Templates](Templates/Investigation-Checklist.md) | Checklist, registro de evidências e relatório |
-| [🧪 Case 001 — Suspicious Installer](Case-Studies/001-Suspicious-Installer/README.md) | Investigação didática de alerta EDR |
-
-## ✅ Princípios da investigação
-
-- **Detecção não é veredito:** classificação de ransomware não comprova criptografia.
-- **Mitigação não é limpeza comprovada:** valide o endpoint e a possibilidade de persistência.
-- **Contexto é essencial:** um arquivo com nome legítimo pode ser malicioso; reputação isolada não comprova legitimidade.
-- **Preserve antes de alterar**, quando viável, e documente todas as ações.
-- **Separe três resultados:** veredito da detecção, eficácia da contenção e impacto efetivo.
-- **Não execute amostras suspeitas** fora de laboratórios isolados e autorizados.
-
-## 📖 Referências
-- [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
-- [NIST SP 800-86](https://csrc.nist.gov/pubs/sp/800/86/final)
-- [MITRE ATT&CK](https://attack.mitre.org/)
-- [CISA Incident & Vulnerability Response Playbooks](https://www.cisa.gov/resources-tools/resources/federal-government-cybersecurity-incident-and-vulnerability-response-playbooks)
+[![Abrir interface web](https://img.shields.io/badge/🌐_ABRIR_INTERFACE_WEB-2F81F7?style=for-the-badge)](https://geovanniandrade.github.io/gg-edr-incident-investigation/)
+[![Playbooks](https://img.shields.io/badge/🛡️_7_PLAYBOOKS-181717?style=for-the-badge)](https://geovanniandrade.github.io/gg-edr-incident-investigation/#playbooks)
 
 ---
 
-*Material educacional para ambientes autorizados. Os controles e a resposta precisam seguir as políticas da organização.*
+## 🎯 Como utilizar
+
+**Triage → Preserve → Investigate → Enrich → Contain → Verdict → Report**
+
+Acesse a [**interface web**](https://geovanniandrade.github.io/gg-edr-incident-investigation/), escolha uma etapa e siga o roteiro: **o que verificar → comando útil → onde investigar → checklist**.
+
+> ⚠️ Em caso de ameaça ativa, a contenção autorizada pode ocorrer antes de concluir as outras etapas. Registre as ações e preserve evidências sempre que possível.
+
+## 🔎 Playbooks — 7 etapas
+
+| Etapa | Guia interativo | Objetivo |
+|:---:|---|---|
+| 01 | [Alert Triage](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/01-Alert-Triage/) | Priorizar o alerta |
+| 02 | [Evidence Collection](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/02-Evidence-Collection/) | Preservar evidências |
+| 03 | [Process Investigation](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/03-Process-Investigation/) | Validar execução e processos |
+| 04 | [Threat Intelligence](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/04-Threat-Intelligence/) | Enriquecer indicadores |
+| 05 | [Containment & Remediation](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/05-Containment-Remediation/) | Conter e validar mitigação |
+| 06 | [Analyst Verdict](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/06-Analyst-Verdict/) | Definir o veredito |
+| 07 | [Incident Reporting](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/07-Incident-Reporting/) | Documentar o incidente |
+
+## 🧰 Onde investigar?
+
+A interface inclui um **seletor por tipo de indicador** — Hash/Arquivo, URL/Domínio, IP ou Comportamento — com links às plataformas mais adequadas.
+
+| Ferramenta | Aplicação |
+|---|---|
+| [VirusTotal](https://www.virustotal.com/gui/home/search) | Reputação de hashes, URLs, IPs e domínios |
+| [urlscan.io](https://urlscan.io/) | Navegação, recursos e redirecionamentos de URLs |
+| [MalwareBazaar](https://bazaar.abuse.ch/) | Pesquisa de hashes e amostras conhecidas |
+| [Hybrid Analysis](https://www.hybrid-analysis.com/) / [ANY.RUN](https://any.run/) | Relatórios de análise comportamental em sandbox |
+| [AbuseIPDB](https://www.abuseipdb.com/) | Histórico de denúncias de IPs |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Técnicas e táticas relacionadas a evidências observadas |
+
+**Privacidade:** nunca envie amostras, logs, documentos ou URLs com informações corporativas sensíveis para serviços públicos sem autorização. Reputação isolada não confirma malware.
+
+## 📚 Recursos complementares
+
+| Material | Acesso |
+|---|---|
+| Conceitos fundamentais | [Knowledge Base](Knowledge-Base/EDR-Fundamentals.md) |
+| Comandos de consulta Windows | [PowerShell](Tools-and-Commands/PowerShell/README.md) |
+| Comandos de consulta Linux | [Linux](Tools-and-Commands/Linux/README.md) |
+| Checklist de investigação | [Investigation Checklist](Templates/Investigation-Checklist.md) |
+| Registro de evidências | [Evidence Register](Templates/Evidence-Register.md) |
+| Modelo de relatório | [Incident Report](Templates/Incident-Report.md) |
+| Exercício simulado | [Case 001 — Suspicious Installer](Case-Studies/001-Suspicious-Installer/README.md) |
+
+## ✅ Princípios
+
+- **Detecção ≠ comprometimento confirmado.**
+- **Mitigated ≠ endpoint comprovadamente limpo.**
+- **True Positive / False Positive / Undefined** precisam de justificativa baseada em evidências.
+- Preserve horários, origem, integridade e contexto dos artefatos.
+
+## 📖 Referências
+
+[NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) · [NIST SP 800-86](https://csrc.nist.gov/pubs/sp/800/86/final) · [MITRE ATT&CK](https://attack.mitre.org/) · [CISA Incident Response Playbooks](https://www.cisa.gov/resources-tools/resources/federal-government-cybersecurity-incident-and-vulnerability-response-playbooks)
+
+---
+
+*Todos os exemplos são didáticos e fictícios. Nenhum dado corporativo real é publicado neste projeto.*
