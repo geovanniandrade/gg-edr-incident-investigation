@@ -54,6 +54,7 @@ A interface inclui um **seletor por tipo de indicador** — Hash/Arquivo, URL/Do
 | Checklist de investigação | [Investigation Checklist](Templates/Investigation-Checklist.md) |
 | Registro de evidências | [Evidence Register](Templates/Evidence-Register.md) |
 | Modelo de relatório | [Incident Report](Templates/Incident-Report.md) |
+| Análise de artefatos recuperados | [Guia web — Retrieve File, ZIP e PDF](https://geovanniandrade.github.io/gg-edr-incident-investigation/Playbooks/EDR-Retrieved-Artifacts/) |
 | Exercício simulado | [Case 001 — Suspicious Installer](Case-Studies/001-Suspicious-Installer/README.md) |
 
 ## ✅ Princípios
